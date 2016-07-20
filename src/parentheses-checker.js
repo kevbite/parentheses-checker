@@ -1,13 +1,13 @@
 module.exports = function (str) {
   'use strict';
-  var split = str.split('');
+  var characters = str.split('');
   var bracketCount = 0;
 
-  for (let c of split) {
-    if (c === '{') {
+  for (let character of characters ) {
+    if (character === '{') {
       bracketCount++;
     }
-    if (c === '}') {
+    if (character === '}') {
       if (bracketCount === 0) {
         return false;
       }
