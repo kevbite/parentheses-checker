@@ -1,9 +1,8 @@
 module.exports = function (str) {
   'use strict';
-  var characters = str.split('');
   var bracketCount = 0;
 
-  for (let character of characters ) {
+  for (let character of str) {
     if (character === '{') {
       bracketCount++;
     }
